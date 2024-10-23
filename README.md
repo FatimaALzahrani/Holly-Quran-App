@@ -53,7 +53,7 @@ Use the following command to run the app on your preferred device or emulator:
 
 The project is structured as follows:
 
-```plaintext
+```bash
    lib/
    ├── configs/              # Configuration files for the app.
    ├── cubits/               # State management cubits (e.g., ChapterCubit).
