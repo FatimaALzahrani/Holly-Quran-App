@@ -1,5 +1,5 @@
 
-![Header](https://capsule-render.vercel.app/api?type=venom&height=300&color=gradient&text=Holly%20Quran%20App&fontColor=0c0)
+![Header](https://capsule-render.vercel.app/api?type=venom&height=300&color=gradient&text=Holly%20Quran%20App&fontColor=000)
 
 The Holly Quran App is a mobile application built using Flutter that allows users to easily read and search the Holy Quran. This app provides several useful features including searching for surahs (سور) by name or number, searching by parts (الأجزاء), and adding bookmarks for easy reference.
 
@@ -54,41 +54,37 @@ Use the following command to run the app on your preferred device or emulator:
 The project is structured as follows:
 
 ```plaintext
-lib/
-├── configs/              # Configuration files for the app.
-├── cubits/               # State management cubits (e.g., ChapterCubit).
-├── models/               # Data models (Chapter, Juz, etc.).
-├── providers/            # Providers (e.g., AppProvider for theme management).
-├── ui/
-│   ├── animations/       # Custom animations for the app.
-│   ├── widgets/          # Reusable UI widgets (buttons, titles, etc.).
-│   └── surah_index/      # Main Surah Index screen and its components.
-└── utils/                # Utility files (assets, helper methods, etc.).
+   lib/
+   ├── configs/              # Configuration files for the app.
+   ├── cubits/               # State management cubits (e.g., ChapterCubit).
+   ├── models/               # Data models (Chapter, Juz, etc.).
+   ├── providers/            # Providers (e.g., AppProvider for theme management).
+   ├── ui/
+   │   ├── animations/       # Custom animations for the app.
+   │   ├── widgets/          # Reusable UI widgets (buttons, titles, etc.).
+   │   └── surah_index/      # Main Surah Index screen and its components.
+   └── utils/                # Utility files (assets, helper methods, etc.).
 
 
 ## Key Files
-
 - **`surah_index_screen.dart`**: This file contains the main UI logic for displaying the Surah index and handling search functionality.
 - **`chapter_cubit.dart`**: Manages the state of the chapters list and handles the fetching of chapter data.
 - **`app_provider.dart`**: Manages the global state of the app, such as theme (dark/light mode).
 
-## How It Works
 
+## How It Works
 1. **Chapter Data Fetching**: The app uses a `ChapterCubit` to fetch and manage the state of the Surah list. The data is loaded from an API or other data source when the app initializes.
 2. **Search Functionality**: Users can type in the search bar, and the list of Surahs is dynamically filtered based on the search query.
 3. **Retry Mechanism**: If an error occurs while fetching the data, the user is presented with a retry button that triggers the fetch process again.
 
 <!--
 ## Screenshots
-
 (Include screenshots here)
 
 ## Contributing
-
 Contributions are welcome! If you find any bugs or have feature suggestions, feel free to create an issue or submit a pull request.
 
 ## License
-
 This project is licensed under the MIT License - see the LICENSE file for details.
 -->
 
