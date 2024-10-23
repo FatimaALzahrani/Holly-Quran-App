@@ -1,5 +1,5 @@
 
-![Header](https://capsule-render.vercel.app/api?type=venom&height=300&color=gradient&text=Holly%20Quran%20App&fontColor=ccc)
+![Header](https://capsule-render.vercel.app/api?type=venom&height=300&color=gradient&text=Holly%20Quran%20App&fontColor=0c0)
 
 The Holly Quran App is a mobile application built using Flutter that allows users to easily read and search the Holy Quran. This app provides several useful features including searching for surahs (سور) by name or number, searching by parts (الأجزاء), and adding bookmarks for easy reference.
 
@@ -36,22 +36,18 @@ To run this project locally, follow these steps:
 
    ```bash
    cd al-quran-surah-index
-
-
    
 3. **Install dependencies**:
 Ensure you have Flutter installed and run:
 
    ```bash
    flutter pub get
-
    
 4. **Run the app**:
 Use the following command to run the app on your preferred device or emulator:
 
    ```bash
    flutter run
-
 
 ## Project Structure
 
