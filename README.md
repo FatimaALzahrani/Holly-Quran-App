@@ -49,6 +49,17 @@ Use the following command to run the app on your preferred device or emulator:
    ```bash
    flutter run
 
+## Key Files
+- **`surah_index_screen.dart`**: This file contains the main UI logic for displaying the Surah index and handling search functionality.
+- **`chapter_cubit.dart`**: Manages the state of the chapters list and handles the fetching of chapter data.
+- **`app_provider.dart`**: Manages the global state of the app, such as theme (dark/light mode).
+
+
+## How It Works
+1. **Chapter Data Fetching**: The app uses a `ChapterCubit` to fetch and manage the state of the Surah list. The data is loaded from an API or other data source when the app initializes.
+2. **Search Functionality**: Users can type in the search bar, and the list of Surahs is dynamically filtered based on the search query.
+3. **Retry Mechanism**: If an error occurs while fetching the data, the user is presented with a retry button that triggers the fetch process again.
+
 ## Project Structure
 
 The project is structured as follows:
@@ -66,25 +77,4 @@ The project is structured as follows:
    └── utils/                # Utility files (assets, helper methods, etc.).
 
 
-## Key Files
-- **`surah_index_screen.dart`**: This file contains the main UI logic for displaying the Surah index and handling search functionality.
-- **`chapter_cubit.dart`**: Manages the state of the chapters list and handles the fetching of chapter data.
-- **`app_provider.dart`**: Manages the global state of the app, such as theme (dark/light mode).
-
-
-## How It Works
-1. **Chapter Data Fetching**: The app uses a `ChapterCubit` to fetch and manage the state of the Surah list. The data is loaded from an API or other data source when the app initializes.
-2. **Search Functionality**: Users can type in the search bar, and the list of Surahs is dynamically filtered based on the search query.
-3. **Retry Mechanism**: If an error occurs while fetching the data, the user is presented with a retry button that triggers the fetch process again.
-
-<!--
-## Screenshots
-(Include screenshots here)
-
-## Contributing
-Contributions are welcome! If you find any bugs or have feature suggestions, feel free to create an issue or submit a pull request.
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
--->
 
